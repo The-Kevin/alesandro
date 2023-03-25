@@ -1,0 +1,25 @@
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0;
+  display: flex;
+
+  justify-content: center;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.image {
+  animation: loading 5s linear infinite; /* Controle o tempo de giro, mudando o numero. */
+}
