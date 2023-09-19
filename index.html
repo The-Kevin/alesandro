@@ -1,18 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=]\, initial-scale=1.0" />
-    <title>Alesandro, te amo</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frases Elogiosas</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Lindo, gostoso</h1>
-    <img
-      class="image"
-      src="alesandro-removebg-preview.png"
-      alt="alesandro gostoso"
-    />
+    <h1 id="frase">bela é:</h1>
+
+    <script>
+      const elogios = [
+        'deslumbrante',
+        'radiante',
+        'maravilhosa',
+        'sedutora',
+        'encantadora',
+        'deslumbrante',
+        'fenomenal',
+        'hipnotizante',
+        'sedutora',
+        'impressionante',
+        'atraente',
+        'divina',
+        'arrebatadora',
+        'esplêndida',
+        'estonteante',
+        'irresistível',
+        'apaixonante',
+        'deslumbrante',
+        'espetacular',
+        'sensual',
+        'estonteante',
+        'radiante',
+        'cativante',
+        'formidável',
+        'exuberante',
+        'sedutora',
+        'magnífica',
+        'maravilhosa',
+        'incrível',
+        'sedutora',
+        'radiante',
+        'deslumbrante',
+        'espetacular',
+        'arrebatadora',
+        'fenomenal',
+        'envolvente',
+        'atraente',
+        'irresistível',
+        'hipnotizante',
+        'deslumbrante',
+        'estonteante',
+        'apaixonante',
+        'esplêndida',
+        'sensual',
+        'cativante',
+        'fenomenal',
+        'radiante',
+        'magnífica',
+        'deslumbrante',
+        'espetacular',
+        'maravilhosa',
+        'sedutora',
+        'impressionante',
+        'divina',
+        'arrebatadora',
+        'esplêndida',
+        'estonteante',
+        'irresistível',
+        'apaixonante',
+        'deslumbrante',
+        'espetacular',
+        'sensual',
+        'formidável',
+        'exuberante',
+        'cativante',
+        'magnífica',
+        'maravilhosa',
+        'sedutora',
+        'radiante',
+        'fenomenal',
+        'hipnotizante',
+        'deslumbrante',
+        'esplêndida',
+        'irresistível',
+        'apaixonante',
+        'deslumbrante',
+        'espetacular',
+        'arrebatadora',
+        'incrível',
+        'sedutora',
+        'cativante',
+        'magnífica',
+        'envolvente',
+        'formidável',
+        'maravilhosa',
+        'sensual',
+        'fenomenal',
+        'radiante',
+        'esplêndida',
+        'deslumbrante',
+        'impressionante',
+        'divina',
+        'apaixonante',
+        'arrebatadora',
+        'espetacular',
+        'estonteante',
+        'irresistível',
+        'cativante',
+        'magnífica',
+        'sedutora',
+        'maravilhosa',
+        'hipnotizante',
+        'fenomenal',
+        'envolvente',
+        'formidável',
+      ];
+      let index = 0;
+
+      function atualizarFrase() {
+        const fraseElement = document.getElementById('frase');
+        fraseElement.textContent = `bela é: ${elogios[index]}`;
+        index = (index + 1) % elogios.length;
+      }
+
+      setInterval(atualizarFrase, 1000);
+    </script>
   </body>
 </html>
